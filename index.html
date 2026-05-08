@@ -3,22 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Website</title>
+    <title>My Portfolio</title>
+
     <link rel="stylesheet" href="style.css">
+
+    <!-- Icons -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
 
-    <header>
-        <h1>Welcome to My Website</h1>
-        <p>This website was built using HTML, CSS, and JavaScript.</p>
-    </header>
+    <!-- Navigation -->
+    <nav>
+        <h2 class="logo">MyPortfolio</h2>
 
-    <section class="content">
-        <h2>About Me</h2>
-        <p>I am a student learning web development.</p>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <button id="darkModeBtn">
+            <i class="fa-solid fa-moon"></i>
+        </button>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <h1>Hello, I'm Nico</h1>
+        <p>A student learning web development and creating responsive websites.</p>
+
+        <a href="#projects" class="btn">View Projects</a>
     </section>
 
-    <button onclick="showMessage()">Click Me</button>
+    <!-- Projects -->
+    <section id="projects" class="projects">
+        <h2>My Projects</h2>
+
+        <div class="project-container">
+
+            <div class="card">
+                <img src="https://picsum.photos/300/200?1">
+                <h3>Portfolio Website</h3>
+                <p>Responsive website made using HTML, CSS, and JavaScript.</p>
+            </div>
+
+            <div class="card">
+                <img src="https://picsum.photos/300/200?2">
+                <h3>Student System</h3>
+                <p>CRUD system developed using CodeIgniter.</p>
+            </div>
+
+            <div class="card">
+                <img src="https://picsum.photos/300/200?3">
+                <h3>Employee Management</h3>
+                <p>Java employee management application.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+
+        <form>
+            <input type="text" placeholder="Your Name">
+            <input type="email" placeholder="Your Email">
+            <textarea placeholder="Message"></textarea>
+
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <!-- Social Media -->
+    <section class="socials">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-github"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 NicoTelen | All Rights Reserved</p>
+    </footer>
 
     <script src="script.js"></script>
 </body>
