@@ -3,22 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Nico | Portfolio</title>
 
     <link rel="stylesheet" href="style.css">
 
-    <!-- Icons -->
+    <!-- Font Awesome -->
     <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
 <body>
 
-    <!-- Navigation -->
+    <!-- NAVIGATION -->
     <nav>
-        <h2 class="logo">MyPortfolio</h2>
+        <h2 class="logo">Nico.</h2>
 
         <ul class="nav-links">
             <li><a href="#home">Home</a></li>
+            <li><a href="#skills">Skills</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
@@ -28,66 +32,54 @@
         </button>
     </nav>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <h1>Hello, I'm Nico</h1>
-        <p>A student learning web development and creating responsive websites.</p>
+    <!-- HERO -->
+    <section class="hero" id="home">
 
-        <a href="#projects" class="btn">View Projects</a>
-    </section>
+        <div class="hero-text" data-aos="fade-right">
+            <h1>Hello, I'm Nico</h1>
 
-    <!-- Projects -->
-    <section id="projects" class="projects">
-        <h2>My Projects</h2>
+            <h2>
+                I'm a <span class="typing"></span>
+            </h2>
 
-        <div class="project-container">
+            <p>
+                Passionate about building modern responsive websites and systems.
+            </p>
 
-            <div class="card">
-                <img src="https://picsum.photos/300/200?1">
-                <h3>Portfolio Website</h3>
-                <p>Responsive website made using HTML, CSS, and JavaScript.</p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn">View Projects</a>
+
+                <a href="cv.pdf" download class="btn secondary-btn">
+                    Download CV
+                </a>
             </div>
-
-            <div class="card">
-                <img src="https://picsum.photos/300/200?2">
-                <h3>Student System</h3>
-                <p>CRUD system developed using CodeIgniter.</p>
-            </div>
-
-            <div class="card">
-                <img src="https://picsum.photos/300/200?3">
-                <h3>Employee Management</h3>
-                <p>Java employee management application.</p>
-            </div>
-
         </div>
+
+        <div class="hero-image" data-aos="fade-left">
+            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43b?q=80&w=1200&auto=format&fit=crop" alt="Profile">
+        </div>
+
     </section>
 
-    <!-- Contact -->
-    <section id="contact" class="contact">
-        <h2>Contact Me</h2>
+    <!-- SKILLS -->
+    <section class="skills" id="skills">
 
-        <form>
-            <input type="text" placeholder="Your Name">
-            <input type="email" placeholder="Your Email">
-            <textarea placeholder="Message"></textarea>
+        <h2 data-aos="fade-up">Skills</h2>
 
-            <button type="submit">Send</button>
-        </form>
-    </section>
+        <div class="skills-container">
 
-    <!-- Social Media -->
-    <section class="socials">
-        <a href="#"><i class="fab fa-facebook"></i></a>
-        <a href="#"><i class="fab fa-github"></i></a>
-        <a href="#"><i class="fab fa-instagram"></i></a>
-    </section>
+            <div class="skill-card" data-aos="zoom-in">
+                <i class="fa-brands fa-html5"></i>
+                <h3>HTML</h3>
+            </div>
 
-    <!-- Footer -->
-    <footer>
-        <p>© 2026 NicoTelen | All Rights Reserved</p>
-    </footer>
+            <div class="skill-card" data-aos="zoom-in">
+                <i class="fa-brands fa-css3-alt"></i>
+                <h3>CSS</h3>
+            </div>
 
-    <script src="script.js"></script>
-</body>
+            <div class="skill-card" data-aos="zoom-in">
+                <i class="fa-brands fa-js"></i>
+                <h3>JavaScript</h3>
+            </div>
 </html>
